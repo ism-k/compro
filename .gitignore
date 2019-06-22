@@ -1,1 +1,6 @@
 .vscode/
+.local/
+.cache/
+.viminfo
+.sudo_as_admin_successful
+.bash_history
