@@ -11,17 +11,13 @@ using ll = long long int;
 
 int main()
 {
-    int N;
-    cin >> N;
+    int N, K;
+    cin >> N >> K;
 
-    int sum = 0;
+    int ans = 1;
     for (int i = 0; i < N; i++)
     {
-        int temp_l, temp_r;
-        cin >> temp_l >> temp_r;
-
-        sum += (temp_r - temp_l + 1);
+        ans = min(2*ans, ans+K);
     }
-
-    cout << sum << endl;
+    cout << ans << endl;
 }

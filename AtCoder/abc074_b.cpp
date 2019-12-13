@@ -11,16 +11,15 @@ using ll = long long int;
 
 int main()
 {
-    int N;
-    cin >> N;
+    int N, K;
+    cin >> N >> K;
 
     int sum = 0;
-    for (int i = 0; i < N; i++)
+    for (int y = 1; y <= N; y++)
     {
-        int temp_l, temp_r;
-        cin >> temp_l >> temp_r;
-
-        sum += (temp_r - temp_l + 1);
+        int x;
+        cin >> x;
+        sum += 2 * min(x, K-x);
     }
 
     cout << sum << endl;

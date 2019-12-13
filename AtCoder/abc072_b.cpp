@@ -11,5 +11,12 @@ using ll = long long int;
 
 int main()
 {
-    
+    string S;
+    cin >> S;
+
+    for (int index = 1; index <= S.size(); index+=2)
+    {
+        cout << S[index-1];
+    }
+    cout << endl;
 }
