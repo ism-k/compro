@@ -11,10 +11,9 @@ using ll = long long int;
 
 int main()
 {
-    int X, Y, Z;
-    cin >> X >> Y >> Z;
+    ll N;
+    cin >> N;
 
-    int ans = (int)(X-Z)/(Y+Z);
-
-    cout << ans << endl;
+    ll max = (int)sqrt(N);
+    cout << max*max << endl;
 }

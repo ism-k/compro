@@ -11,10 +11,16 @@ using ll = long long int;
 
 int main()
 {
-    int X, Y, Z;
-    cin >> X >> Y >> Z;
+    int N;
+    cin >> N;
 
-    int ans = (int)(X-Z)/(Y+Z);
+    vector<ll> L;
+    L.push_back(2);
+    L.push_back(1);
+    for (int i = 2; i < N+1; i++)
+    {
+        L.push_back(L[i-2] + L[i-1]);
+    }
 
-    cout << ans << endl;
+    cout << L[N] << endl;
 }
